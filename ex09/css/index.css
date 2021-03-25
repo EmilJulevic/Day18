@@ -1,0 +1,25 @@
+body {
+    font-family: ˙Robot, sans-serif;;
+    color: rgb(131, 77, 77);
+    background: url(https://drive.google.com/file/d/1Udu2JaH76Qo1lY8YNuOb4Wu_yrx1SqmV/view?usp=sharing);
+}
+
+h1 {
+    font-size: 10px;
+    position: inherit;
+   
+}
+
+#css-logo img{
+    width: 10%;
+}
+
+#html-logo img{
+    width: 10%;
+
+}
+
+#js-logo img{
+    width: 10%;
+    margin-right: 0 0 0 30px;
+}
