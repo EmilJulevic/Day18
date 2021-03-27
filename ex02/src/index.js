@@ -4,28 +4,17 @@ function* myGenerator() {
     yield* insideGenerator3();
 }
 function* insideGenerator1() {
-    yield 1;
-    yield 2;
-    yield 3;
-    yield 4;
-    yield 5;
+    for (var x = 1; x <= 5; x++) yield x;
 }
 function* insideGenerator2() {
-    yield 10;
-    yield 11;
-    yield 12;
-    yield 13;
-    yield 14;
-    yield 15;
+    for (var x = 10; x <= 15; x++) yield x;
 }
 function* insideGenerator3() {
-    yield 6;
-    yield 7;
-    yield 8;
-    yield 9;
+    for (var x = 6; x <= 9; x++) yield x;
 }
 
 let iterator = myGenerator();
+
 let fifteenArray = [];
 let fifteenArrayStr = "";
 

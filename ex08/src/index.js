@@ -3,12 +3,12 @@ let two = new Set([6, 4, 3, 2]);
 let unionSet = new Set([...one, ...two]);
 
 let intersectionSet = new Set(
-  [...one].filter( x => {
+  [...one].filter(x => {
     return two.has(x);
   })
 );
 let differenceSet = new Set(
-  [...one].filter( x => {
+  [...one].filter(x => {
     return !two.has(x);
   })
 );
@@ -16,3 +16,7 @@ let differenceSet = new Set(
 console.log(one);
 console.log(two);
 console.log(unionSet);
+console.log(intersectionSet);
+console.log(differenceSet);
+
+module.exports = { unionSet, intersectionSet, differenceSet };
